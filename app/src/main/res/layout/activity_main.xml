@@ -47,11 +47,13 @@
 
         <TextView
             android:id="@+id/textView4"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kön:"
             app:layout_constraintBottom_toBottomOf="@id/radio_gender"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/form"
             app:layout_constraintTop_toTopOf="@id/radio_gender" />
 
         <RadioGroup
@@ -63,25 +65,35 @@
             android:orientation="horizontal">
 
             <RadioButton android:id="@+id/radio_man"
-                android:layout_marginHorizontal="30dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Man" />
 
             <RadioButton
                 android:id="@+id/radio_kvinna"
-                android:layout_marginHorizontal="30dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Kvinna" />
 
             <RadioButton
                 android:id="@+id/radio_annat"
-                android:layout_marginHorizontal="30dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Annat" />
         </RadioGroup>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/form"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Submit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
